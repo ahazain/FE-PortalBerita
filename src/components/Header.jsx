@@ -95,7 +95,7 @@ function Header() {
           style={{
             opacity: Math.max(0, 1 - scrollPosition / 100),
             transform: `translateY(${Math.min(0, -scrollPosition / 2)}px)`,
-            visibility: scrollPosition > 200 ? "hidden" : "visible",
+            visibility: scrollPosition > 200 ? 'hidden' : 'visible',
           }}
         >
           cahyawarta
@@ -106,25 +106,25 @@ function Header() {
       <div
         className="fixed left-0 right-0 bg-red-600 z-50 transition-all duration-300 ease-in-out"
         style={{
-          top: isScrolled ? "90px" : "auto",
+          top: isScrolled ? '90px' : 'auto',
           transform: `translateY(${isScrolled ? 0 : scrollPosition}px)`,
         }}
       >
         <div className="container mx-auto">
           <div className="category gap-x-7 flex justify-center text-2xl text-blue-100 font-medium opacity-85 py-4">
-            <a href="#">Latest</a>
-            <a href="#">National</a>
-            <a href="#">Politics</a>
-            <a href="#">Economy</a>
-            <a href="#">Business</a>
-            <a href="#">Technology</a>
-            <a href="#">Science </a>
-            <a href="#">Sports</a>
-            <a href="#">Lifestyle</a>
-            <a href="#">Entertainment</a>
-            <a href="#">international</a>
-            <a href="#">Health</a>
-            <a href="#">Religion </a>
+            <Link to="/news/latest">Latest</Link>
+            <Link to="/news/national">National</Link>
+            <Link to="/news/politics">Politics</Link>
+            <Link to="/news/economy">Economy</Link>
+            <Link to="/news/business">Business</Link>
+            <Link to="/news/technology">Technology</Link>
+            <Link to="/news/science">Science</Link>
+            <Link to="/news/sports">Sports</Link>
+            <Link to="/news/lifestyle">Lifestyle</Link>
+            <Link to="/news/entertainment">Entertainment</Link>
+            <Link to="/news/international">International</Link>
+            <Link to="/news/health">Health</Link>
+            <Link to="/news/religion">Religion</Link>
           </div>
         </div>
       </div>
